@@ -47,3 +47,19 @@ let di=document.getElementById('btn10');
 di.addEventListener("click", function (){
     document.getElementById("btnd").style.background="#da6548";
 })
+
+
+
+function colors(){
+    let red = document.getElementById("red").value
+    let green = document.getElementById("green").value
+    let blue = document.getElementById("blue").value
+       let color="rgb(" + red +"," + green +","+ blue + ")";
+    document.getElementById("btnd").style.background=color
+    document.getElementById("output").innerHTML=color
+}
+
+document.getElementById("red").addEventListener("input",colors);
+document.getElementById("green").addEventListener("input",colors);
+document.getElementById("blue").addEventListener("input",colors);
+
